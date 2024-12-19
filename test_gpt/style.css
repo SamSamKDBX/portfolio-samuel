@@ -1,0 +1,181 @@
+/* Police */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f3e7;
+    color: #3a2e2a;
+}
+
+header {
+    background-color: #d3a15c;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* Section à propos */
+.about {
+    background-color: #f7e1c1;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about h2 {
+    color: #9a3d2c;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Sections Centres d'intérêt et Compétences en ligne */
+.interests-skills {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+/* Section centres d'intérêt */
+.interests-block {
+    width: 50%;
+}
+
+.interests h2 {
+    color: #9a3d2c;
+    margin-bottom: 20px;
+}
+
+.interests ul {
+    list-style-type: none;
+}
+
+.interests li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Section compétences */
+.skills-block {
+    width: 50%;
+}
+
+.skills h2 {
+    color: #9a3d2c;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #f1e1c6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    color: #9a3d2c;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1em;
+}
+
+/* Section projets */
+.projects {
+    background-color: #f7e1c1;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.projects-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projects h2 {
+    color: #9a3d2c;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    background-color: #f1e1c6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    color: #9a3d2c;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #d3a15c;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    color: white;
+}
