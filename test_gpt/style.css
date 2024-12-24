@@ -1,20 +1,24 @@
-/* Police */
+/* Importation de la police */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Réinitialisation des marges et paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Style global */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f3e7;
+    background-color: #f1e1c6;
     color: #3a2e2a;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background-color: #d3a15c;
+    background-color: #cc444b;
     padding: 20px 0;
     text-align: center;
     margin-bottom: 30px;
@@ -22,7 +26,7 @@ header {
 
 header h1 {
     font-size: 2.5em;
-    color: white;
+    color: #f7e1c1;
 }
 
 nav ul {
@@ -36,21 +40,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #f7e1c1;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Conteneur principal */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Sections */
 section {
     padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Section à propos */
+/* Section À propos */
 .about {
     background-color: #f7e1c1;
     padding: 40px;
@@ -58,35 +65,33 @@ section {
     border-radius: 10px;
 }
 
-.about-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.about h2 {
+.about-block h2 {
     color: #9a3d2c;
     margin-bottom: 20px;
 }
 
 .about p {
-    line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* Sections Centres d'intérêt et Compétences en ligne */
-.interests-skills {
+/* Section Centres d'intérêt et Compétences */
+.interests {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 30px;
 }
 
-/* Section centres d'intérêt */
-.interests-block {
-    width: 50%;
+.interests-block, .skills-block {
+    flex: 1;
+    background-color: #f7e1c1;
+    padding: 20px; 
+    margin: 0 45px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.interests h2 {
+.interests-block h2, .skills-block h2 {
     color: #9a3d2c;
     margin-bottom: 20px;
 }
@@ -100,16 +105,7 @@ section {
     font-size: 1.2em;
 }
 
-/* Section compétences */
-.skills-block {
-    width: 50%;
-}
-
-.skills h2 {
-    color: #9a3d2c;
-    margin-bottom: 20px;
-}
-
+/* Compétences spécifiques */
 .skills-list {
     display: flex;
     gap: 20px;
@@ -120,21 +116,16 @@ section {
     background-color: #f1e1c6;
     padding: 20px;
     border-radius: 8px;
-    width: 30%;
-    min-width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
 }
 
 .skill h3 {
-    color: #9a3d2c;
+    color: #3a2e2a;
     margin-bottom: 10px;
 }
 
-.skill p {
-    font-size: 1em;
-}
-
-/* Section projets */
+/* Section Projets */
 .projects {
     background-color: #f7e1c1;
     padding: 40px;
@@ -142,10 +133,8 @@ section {
     border-radius: 10px;
 }
 
-.projects-block {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.project {
+    margin-bottom: 10px;
 }
 
 .projects h2 {
@@ -153,29 +142,14 @@ section {
     margin-bottom: 20px;
 }
 
-.project-item {
-    background-color: #f1e1c6;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-item h3 {
-    color: #9a3d2c;
-    margin-bottom: 10px;
-}
-
-.project-item p {
-    line-height: 1.6;
-}
-
 /* Footer */
 footer {
-    background-color: #d3a15c;
+    background-color: #cc444b;
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-    color: white;
+    color: #f7e1c1;
+}
+footer a {
+    color: #f1e1c6;
 }
