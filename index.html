@@ -1,51 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Samuel</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Accueil - Portfolio de Samuel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Portfolio de Samuel</h1>
-        <p>Étudiant en BUT Informatique à Blagnac, passionné par le développement et la conception de jeux vidéo.</p>
+        <div class="container">
+            <h1>Bienvenue sur le portfolio de Samuel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="projets">
-            <h2>Mes Projets</h2>
-            <div class="projet">
-                <h3>Roman dystopique de science-fiction</h3>
-                <p>En cours d'écriture, j'explore des thématiques qui me passionnent comme la science-fiction et les dystopies.</p>
+    <section class="about">
+        <div class="container">
+            <div class="about-block">
+                <h2>À propos de moi</h2>
+                <p>
+                    Je m'appelle Samuel et je suis étudiant en première année de BUT Informatique à Blagnac.
+                    J'ai obtenu mon bac STI2D spécialité SIN avec mention Bien. Mon objectif est de travailler
+                    dans le développement ou la conception de jeux vidéo, un domaine qui me passionne depuis
+                    longtemps.
+                </p>
+                <p>
+                    En dehors de mes études, j'aime lire, écrire, et coder en Java, C, et C#.
+                    Mes jeux vidéo préférés sont <em>The Last of Us</em> et <em>Cyberpunk 2077</em>.
+                    Je joue également au basketball, aux échecs ainsi qu'à des jeux de société complexes.
+                    Je suis également un grand amateur de séries et d'animés.
+                </p>
             </div>
-            <div class="projet">
-                <h3>Jeu d'échecs sur Unity</h3>
-                <p>Un projet en C# pour améliorer mes compétences en programmation et en conception de jeux.</p>
-            </div>
-            <div class="projet">
-                <h3>Mur d'escalade connecté</h3>
-                <p>Maquette réalisée en terminale STI2D pour un projet scolaire.</p>
-            </div>
-            <div class="projet">
-                <h3>Robot roulant avec Arduino</h3>
-                <p>Création et programmation d’un robot contrôlé via Bluetooth avec un téléphone portable.</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="interets">
-            <h2>Mes Centres d'Intérêt</h2>
-            <ul>
-                <li><strong>Loisirs :</strong> Lecture, écriture, jeux vidéo (*The Last of Us*, *Cyberpunk 2077*), basket, jeux de société complexes comme les échecs, séries et animés.</li>
-                <li><strong>Linux :</strong> Utilisation quotidienne et installation sur plusieurs ordinateurs depuis mon stage de 3ᵉ.</li>
-                <li><strong>Langages de programmation :</strong> Java, C, débutant en C# pour Unity.</li>
-                <li><strong>Ambitions :</strong> Retenter l'École 42 Lyon après avoir complété leur piscine en entier.</li>
-            </ul>
-        </section>
-    </main>
+    <div class="interests">
+        <div class="container">
+            <div class="interests-block">
+                <h2>Centres d'intérêt</h2>
+                <ul>
+                    <li>Lecture</li>
+                    <li>Écriture de fiction</li>
+                    <li>Jeux vidéo (The Last of Us, Cyberpunk 2077)</li>
+                    <li>Basketball</li>
+                    <li>Jeux de société complexes (échecs)</li>
+                    <li>Séries et animés</li>
+                    <li>La programmation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="skills-block">
+                <h2>Compétences</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <h3>Langages de programmation</h3>
+                        <p>Java, C, C#, Unity</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Technologies et outils</h3>
+                        <p>HTML, CSS, libreOffice, Canva</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Autres compétences</h3>
+                        <p>
+                            Développement de jeux vidéo, écriture créative, gestion de projets personnels, 
+                            analyse de données, travail en équipe
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Samuel - Tous droits réservés.</p>
+        <div class="container">
+            <p>&copy; 2024 Samuel - Portfolio</p>
+            <a href="mailto:samuel.bour@etu.univ-tlse2.fr">samuel.bour@etu.univ-tlse2.fr</a>
+            <p>Tous droits réservés</p>
+        </div>
     </footer>
 </body>
+
 </html>
